@@ -6,7 +6,7 @@
     <title>Alon!</title>
 </head>
 <body>
-<div class="back box">
+<div class="container">
 
     <a href="" class="box logo">
         <img src="./assets/img/LogoSloganBlanc.png" class="w90">
@@ -61,9 +61,15 @@ d’une boisson offerte dans des établissements partenaires.</span>
         src: url('./assets/fonts/Madame.ttf') format('truetype');
     }
 
+    body {
+        background-color: #1f1f1f;
+
+    }
+
     .logo {
-        margin: 1em;
+        margin: 2em;
         align-items: center;
+
     }
 
     .orange {
@@ -71,17 +77,17 @@ d’une boisson offerte dans des établissements partenaires.</span>
     }
 
     .back {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #1f1f1f;
         /*background-image: url(./chris_haga-800x967.jpg);*/
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
         height: 100%;
         width: 100%;
         z-index: -1;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .txt {
@@ -92,17 +98,17 @@ d’une boisson offerte dans des établissements partenaires.</span>
     }
 
     .w90 {
-        width: 90%;
+        width: 80%;
+        max-width: 400px;
     }
 
     .box {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
-    .social{
+    .social {
         color: azure;
         position: fixed;
         bottom: 0;
