@@ -1,7 +1,7 @@
 
 version: "3.7"
 services:
-  landingAlon:
+  landing_alon:
     image: nginx
     restart: always
     volumes:
@@ -11,8 +11,8 @@ services:
       - traefik.enable=true
       - traefik.docker.network=frontend
 
-      - traefik.http.routers.test_machine.tls.certresolver=myresolver
-      - traefik.http.routers.test_machine.rule=Host(`alon.re`)
+      - traefik.http.routers.landing_alon.tls.certresolver=myresolver
+      - traefik.http.routers.landing_alon.rule=Host(`alon.re`)
 #      - traefik.http.routers.landingAlon.rule=Host(`alon.re`) || Host(`www.alon.re`)
 
     networks:
