@@ -12,7 +12,8 @@ services:
       - traefik.docker.network=frontend
       - traefik.http.routers.landingAlon.tls.certresolver=myresolver
       - traefik.http.routers.landingAlon.entrypoints=websecure
-      - traefik.http.routers.landingAlon.rule=Host(`alon.re`) || Host(`www.alon.re`)
+      - traefik.http.routers.landingAlon.rule=Host(`alon.re`)
+#      - traefik.http.routers.landingAlon.rule=Host(`alon.re`) || Host(`www.alon.re`)
 
     networks:
       - frontend
