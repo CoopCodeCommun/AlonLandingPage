@@ -10,9 +10,9 @@ services:
     labels:
       - traefik.enable=true
       - traefik.docker.network=frontend
-      - traefik.http.routers.landingalon.tls.certresolver=myresolver
-      - traefik.http.routers.landingalon.entrypoints=websecure
-      - traefik.http.routers.landingalon.rule=Host(`alon.re`)
+
+      - traefik.http.routers.test_machine.tls.certresolver=myresolver
+      - traefik.http.routers.test_machine.rule=Host(`alon.re`)
 #      - traefik.http.routers.landingAlon.rule=Host(`alon.re`) || Host(`www.alon.re`)
 
     networks:
